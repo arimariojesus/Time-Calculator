@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+      <h1>Time Calculator</h1>
+    </div>
+    <div class="wrapper">
+      <div class="result">
+        <p id="result">00<span id="hour">hour</span> 00<span id="min">min</span> 00<span id="sec">sec</span></p>
+      </div>
+      <table>
+        <tr class="input-wrapper primary">
+          <td></td>
+          <td>
+            <input type="time" class="input">
+          </td>
+          <td>
+            <button class=" btn btn-add">+</button>
+          </td>
+        </tr>
+        <tr class="input-wrapper secondary">
+          <td>
+            <button class="btn operator">-</button>
+          </td>
+          <td>
+            <input type="time" class="input">
+          </td>
+          <td>
+            <button class="btn btn-delete">x</button>
+          </td>
+        </tr>
+      </table>
+      <button class="calc">CALCULATE</button>
+    </div>
+  </div>
+</body>
+</html>
