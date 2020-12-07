@@ -12,33 +12,42 @@
       <h1>Time Calculator</h1>
     </div>
     <div class="wrapper">
-      <div class="result">
-        <p id="result">00<span id="hour">hour</span> 00<span id="min">min</span> 00<span id="sec">sec</span></p>
+      <div id="result">
+        <p>
+          <span id="hour">00</span>
+          <span id="hour-text">hour</span>
+          <span id="min">00</span>
+          <span id="min-text">min</span>
+          <span id="sec">00</span>
+          <span id="sec-text">sec</span>
+        </p>
       </div>
       <table>
-        <tr class="input-wrapper primary">
-          <td></td>
-          <td>
-            <input type="time" class="input">
-          </td>
-          <td>
-            <button class=" btn btn-add">+</button>
-          </td>
-        </tr>
-        <tr class="input-wrapper secondary">
-          <td>
-            <button class="btn operator">-</button>
-          </td>
-          <td>
-            <input type="time" class="input">
-          </td>
-          <td>
-            <button class="btn btn-delete">x</button>
-          </td>
-        </tr>
+        <tbody id="field-times">
+          <tr class="input-wrapper primary">
+            <td></td>
+            <td>
+              <input type="time" class="input">
+            </td>
+            <td>
+              <button class=" btn" id="btn-add">+</button>
+            </td>
+          </tr>
+          <tr class="input-wrapper secondary">
+            <td>
+              <button class="btn operator">-</button>
+            </td>
+            <td>
+              <input type="time" class="input">
+            </td>
+            <td></td>
+          </tr>
+        </tbody>
       </table>
-      <button class="calc">CALCULATE</button>
+      <button id="calc">CALCULATE</button>
     </div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
