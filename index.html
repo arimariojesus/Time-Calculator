@@ -27,18 +27,21 @@
           <tr class="input-wrapper primary">
             <td></td>
             <td>
-              <input type="time" class="input">
+              <input type="time" class="input" step="2">
             </td>
             <td>
               <button class=" btn" id="btn-add">+</button>
             </td>
           </tr>
-          <tr class="input-wrapper secondary">
-            <td>
-              <button class="btn operator">-</button>
+          <tr class="input-wrapper">
+            <td id="elt">
+              <button class="btn operator" 
+              onclick="changeOperator(this)"
+              data-operator="0"
+              data-index="0">+</button>
             </td>
             <td>
-              <input type="time" class="input">
+              <input type="time" class="input" step="2" id="index-0">
             </td>
             <td></td>
           </tr>

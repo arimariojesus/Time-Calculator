@@ -9,6 +9,7 @@
   --btn-operator-hover: rgb(18, 116, 138);
   --bg-wrapper: rgb(252, 252, 252);
   --bg-result: rgb(242, 242, 242);
+  --border: rgb(224, 224, 224);
 }
 
 * {
@@ -16,6 +17,7 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
+  transition: 0.3s linear;
 }
 
 button {
@@ -30,6 +32,22 @@ button:active {
 body {
   font-family: 'Nunito', sans-serif;
   background-color: var(--btn-operator);
+}
+
+input {
+  font-size: 1.2em;
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--bg-result);
+}
+
+input[type=time] {
+  padding: 5px 0px 5px 12%;
+}
+
+input[type=number] {
+  padding: 5px 0px 5px 0;
 }
 
 input, button {
@@ -67,6 +85,7 @@ h1 {
   padding: 5px 10px;
   font-size: 1.3rem;
   font-weight: 600;
+  border: 1px solid var(--border);
   border-radius: 8px;
 }
 
@@ -94,7 +113,13 @@ td {
   width: 30px;
   height: 30px;
   border-radius: 8px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
   color: var(--bg-wrapper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 #btn-add {
