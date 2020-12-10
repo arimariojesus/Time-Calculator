@@ -101,6 +101,21 @@ table {
   border-spacing: 10px;
 }
 
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate(-10%);
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+tr {
+  animation: show 0.3s linear;
+}
+
 td {
   text-align: center;
 }
