@@ -1,5 +1,6 @@
 <h1 align="center">
   🕓 Time Calculator
+  <br>
   <img src="./assets/Time-Calculator-Web.png" width="500px"/>
 </h1>
 
