@@ -2,9 +2,9 @@ const resultField = document.querySelector('#result p');
 const btnAdd = document.querySelector('#btn-add');
 const btnCalc = document.querySelector('#calc');
 const fieldTimes = document.querySelector('#field-times');
-
 let indexField = 1;
 
+// ASSIGNMENT: Add Fields
 const handleCreateTimeInput = () => {
   const trElement = document.createElement('tr');
   trElement.classList.add('input-wrapper', 'field-' + indexField);
@@ -40,7 +40,7 @@ const addField = () => {
 
 btnAdd.addEventListener('click', addField);
 
-// TODO: Remover Campo
+// ASSIGNMENT: Remove Field
 const handleRemoveChild = field => {
   const indexElement = field.id;
   const element = document.querySelector('.field-' + (indexElement));
@@ -48,7 +48,7 @@ const handleRemoveChild = field => {
   element.remove();
 }
 
-// TODO: Mudar operador
+// ASSIGNMENT: Operator Button Change
 const nextOperator = (element, index) => {
   const operators = ['+', '-', 'x', '/'];
   const valuesOperations = ['sum', 'sub', 'mult', 'div'];
@@ -82,7 +82,7 @@ const changeOperator = element => {
   handleMultiplicationOrDivision(element, indexOperator);
 }
 
-// TODO: Calcular
+// ASSIGNMENT: Calculation and Result Display
 const OperationsReduce = {
   'sum': (op1, op2) => {
     return op1 + op2
@@ -147,10 +147,18 @@ const handleCalculation = () => {
     return r;
   })
 
-  console.log(valuesInput);
-  console.log(convertToHours(result));
+  return convertToHours(result);
 }
 
-btnCalc.addEventListener('click', handleCalculation);
+const handleDisplayResult = () => {
+  const result = handleCalculation();
+  const hoursField = resultField.querySelector('#hour');
+  const minutesField = resultField.querySelector('#min');
+  const secondsField = resultField.querySelector('#sec');
 
-// TODO: Adicionar resultado
+  hoursField.innerHTML = result.hours;
+  minutesField.innerHTML = result.minutes;
+  secondsField.innerHTML = result.seconds;
+}
+
+btnCalc.addEventListener('click', handleDisplayResult);
