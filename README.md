@@ -1,12 +1,14 @@
 <h1 align="center">
   🕓 Time Calculator
+  <br>
+  <br>
   <img src="./assets/Time-Calculator-Web.png" width="500px"/>
 </h1>
 
 <p align="center">
  <a href="#1">Sobre</a> •
  <a href="#2">Layout Mobile</a> • 
- <a href="#3">Layout Mobile</a> • 
+ <a href="#3">Contribua</a> • 
  <a href="#4">Licenças</a>
 </p>
 
