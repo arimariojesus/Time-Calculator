@@ -123,7 +123,7 @@ const convertToHours = (total) => {
 
 const convertToSeconds = (arr) => {
   if (arr.length === 1) {
-    return parseInt(arr[0])
+    return parseFloat(arr[0])
   }else if (arr.length === 2) {
     return (parseInt(arr[0]) * 60 + parseInt(arr[1])) * 60;
   }else if (arr.length === 3) {
